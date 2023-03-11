@@ -1,0 +1,82 @@
+{
+	"name": "code-spell-checker-russian",
+	"description": "Russian dictionary extension for VS Code.",
+	"version": "2.0.8",
+	"displayName": "Russian - Code Spell Checker",
+	"icon": "images/SpellCheck.png",
+	"private": true,
+	"publisher": "streetsidesoftware",
+	"engines": {
+		"vscode": "^1.67.0"
+	},
+	"sponsor": {
+		"url": "https://opencollective.com/code-spell-checker"
+	},
+	"extensionKind": [
+		"workspace"
+	],
+	"categories": [
+		"Linters",
+		"Other"
+	],
+	"activationEvents": [
+		"onStartupFinished"
+	],
+	"qna": "marketplace",
+	"main": "./out/src/extension",
+	"contributes": {
+		"commands": [
+			{
+				"command": "cSpellExt_russian.enableRussian",
+				"title": "Enable Russian Spell Checker Dictionary"
+			},
+			{
+				"command": "cSpellExt_russian.disableRussian",
+				"title": "Disable Russian Spell Checker Dictionary"
+			},
+			{
+				"command": "cSpellExt_russian.enableRussianWorkspace",
+				"title": "Enable Russian Spell Checker Dictionary in Workspace"
+			},
+			{
+				"command": "cSpellExt_russian.disableRussianWorkspace",
+				"title": "Disable Russian Spell Checker Dictionary in Workspace"
+			}
+		]
+	},
+	"extensionDependencies": [
+		"streetsidesoftware.code-spell-checker"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/streetsidesoftware/vscode-cspell-dict-extensions"
+	},
+	"bugs": {
+		"url": "https://github.com/streetsidesoftware/vscode-cspell-dict-extensions/issues"
+	},
+	"license": "MIT",
+	"scripts": {
+		"clean": "rimraf out",
+		"clean-build": "npm run clean && npm run build",
+		"publish-extension": "vsce publish",
+		"pack-extension": "vsce package",
+		"vscode:prepublish": "npm run build",
+		"build": "tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"test": "node ../../node_modules/vscode/bin/test"
+	},
+	"dependencies": {
+		"@cspell/dict-ru_ru": "^2.0.5"
+	},
+	"__metadata": {
+		"id": "1ad9763e-4b6c-4eb4-b7af-2e5f0fdaaccb",
+		"publisherId": "67600ca7-88fb-4104-9f7e-dd51c00facf2",
+		"publisherDisplayName": "Street Side Software",
+		"targetPlatform": "undefined",
+		"isApplicationScoped": false,
+		"updated": false,
+		"isPreReleaseVersion": false,
+		"installedTimestamp": 1678508228641,
+		"preRelease": false
+	}
+}

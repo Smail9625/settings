@@ -1,0 +1,44 @@
+{
+	"name": "darkpurple",
+	"displayName": "Dark Purple - WebStorm Edition",
+	"description": "Dark Purple - WebStorm Edition",
+	"version": "0.0.10",
+	"publisher": "rexebin",
+	"icon": "icon.png",
+	"repository": {
+		"url": "https://www.github.com/rexebin/darkpurple"
+	},
+	"engines": {
+		"vscode": "^1.33.0"
+	},
+	"categories": [
+		"Themes"
+	],
+	"keywords": [
+		"Dark Purple",
+		"WebStorm",
+		"Dark Theme",
+		"Typescript",
+		"Angular"
+	],
+	"contributes": {
+		"themes": [
+			{
+				"label": "Dark Purple - Webstorm",
+				"uiTheme": "vs-dark",
+				"path": "./themes/Dark Purple - Webstorm-color-theme.json"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "a54c9bda-82b8-44d0-bd05-7b7dc9f1fe77",
+		"publisherId": "6042d581-2887-4868-8ac3-18c87236c9e1",
+		"publisherDisplayName": "rexebin",
+		"targetPlatform": "undefined",
+		"isApplicationScoped": false,
+		"updated": false,
+		"isPreReleaseVersion": false,
+		"installedTimestamp": 1678471913496,
+		"preRelease": false
+	}
+}
